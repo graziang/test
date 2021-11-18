@@ -1,23 +1,23 @@
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="ID_24ca44a7-58e6-4c0e-8ad1-2d7e76464149" entityID="http://localhost:8080/auth/realms/testspid">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="ID_313deb3e-679c-4af0-9250-389f08fe40ab" entityID="http://localhost:8080/auth/realms/template">
 <dsig:Signature xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
 <dsig:SignedInfo>
 <dsig:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
 <dsig:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-<dsig:Reference URI="#ID_24ca44a7-58e6-4c0e-8ad1-2d7e76464149">
+<dsig:Reference URI="#ID_313deb3e-679c-4af0-9250-389f08fe40ab">
 <dsig:Transforms>
 <dsig:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
 <dsig:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
 </dsig:Transforms>
 <dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-<dsig:DigestValue>X7LeUXwRd60b3SJOarFgjCOOu6x8RKHhGUrrL1OHcts=</dsig:DigestValue>
+<dsig:DigestValue>f0M0eB/hvdHSHMPaXviRwHJpbrlfx856mfQ9I1xZ+0A=</dsig:DigestValue>
 </dsig:Reference>
 </dsig:SignedInfo>
-<dsig:SignatureValue>VSEPCyiEUA5tC6XNLXmjWDeFVNOpXxuWwYp9D4wDIosnTinCTSuBN0V5Z1kpuQfXQRlto93QCo2XlJQkqV3ebPm8+PoyTaVDRWGLUHgSEMxMkcjjB7uwpjq6MxEaz9nacRbmaylckAwK8I87yDYQNKuz5jWBaBo7lw1M+tYLwMkJMjxTIwkbWqDnxnFmaCifBdSJ5eugFq3wNK4kSVIHuuVh0CvvaE3fTtzQNnPMbpmSuVi4H8Io/Sr2WcuPhSvvmAidx7oCoNimjoTOn89V5C7Z0mF4b3gBQCRifh7zERD4xsmMDpBh3Izz0to2n1q1SEBtNC9DVplKDg8sDiQV0w==</dsig:SignatureValue>
+<dsig:SignatureValue>cg6f4cHITRlEG+lthUlPo4+DMcgzdgI/w7PqiMNXUss8Dqjg765+ooGlS7nXeUcLb3hYsG4wMEZHWiLzLNN1qkYIuLKYaCFEl9y6Pj69018IyE2JyL553c/tCPiK4CdwxLd4+rdhGYKJVP9k3DQvL7lXJCqDDsuBi+2Az8nuEWDFERHM6eE92z88W+aaDDWMlflqbI2EvK4rFm5xnqCWafnBngTmFZaTKpN9aJH6dxiO0mDYCfK2U6WA6RUzNsdmc9Ve1Ma+xAbQjA1/il+YYSJ4G/focE7Bk2lP7Byuf89DycQW1IILONjM/ZmCv5lNYmo5zETaMNctmqj1LSwPIA==</dsig:SignatureValue>
 <dsig:KeyInfo>
-<dsig:KeyName>4ppYKyxSEhJfSmFr5snpHFAM-XUuIBOTKY9Ps-06LeA</dsig:KeyName>
+<dsig:KeyName>4EONqipKieyPr8tt44c6D8Rwvg69jACa3NzHDXPbIPA</dsig:KeyName>
 <dsig:KeyValue>
 <dsig:RSAKeyValue>
-<dsig:Modulus>1XaP0EE6KI1kAeeZizDl/vUAOG1Dsr+UfypNd6T6BsmFYzxW2YB+v0aXa2CkjbRumSKBOln+txyGVXNinz+sp2Rayav9Vxmz3UQvI+4VG3EeK8dadfu2OqzQ53XC6O1NDnSv3OkcZxiD7ECc3ctCrCxnyoQf0i7uEvX5Y7Cc4iF5LSx0+1cXecTo64gY7yuoV4iIL9qmJoXQQBfDzfFrafQQ2iZa4ITZRhsh/hhQ/3HDxbA5A0qZaZDeJbeJmNjxJjwwR7VwrI6DIU8tgWrrMnEEgm0KyZaNW2H/kpeIuw6rgSZnZ+IbXvRAZ/Uk5hKVPhIw6qEpamCU20MohMuX5w==</dsig:Modulus>
+<dsig:Modulus>lHI0Bo1OI7MyN5gyAvgDwkgsX5LkfFKe/tyzWU7BddcZ7QmB2zZ6PsLI0nOTKZSRB6WeFNXXf6eqkKA3UxXj+8TqDPiD6dxi69D9Jjc4jBBNJj+AIhtFPJIdmWAFUwmKylPZDPGFasviNkbsGmkt3FWHfBDvBYgerSCWUVQoe+HEVScBMwUqhJ33zCnavOg2G+v53QJPNzALjNYwGwrVoFORt+Q8s4obL4e8sssXxZ0J1BU/CFhF9al3t5hJnk4/A7V5QdgFrVmjLlNFu/mBUUW6O8W7Y2FXHq1WJ0gJaJJkJuiycAGkwJM/hY1ZsGZEidna8oVCKgZm53XIuARffQ==</dsig:Modulus>
 <dsig:Exponent>AQAB</dsig:Exponent>
 </dsig:RSAKeyValue>
 </dsig:KeyValue>
@@ -26,15 +26,15 @@
 <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
 <md:KeyDescriptor use="signing">
 <ds:KeyInfo>
-<ds:KeyName>4ppYKyxSEhJfSmFr5snpHFAM-XUuIBOTKY9Ps-06LeA</ds:KeyName>
+<ds:KeyName>4EONqipKieyPr8tt44c6D8Rwvg69jACa3NzHDXPbIPA</ds:KeyName>
 <ds:X509Data>
-<ds:X509Certificate>MIICnzCCAYcCBgF9FJrbSzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAh0ZXN0c3BpZDAeFw0yMTExMTIxNDQyMTJaFw0zMTExMTIxNDQzNTJaMBMxETAPBgNVBAMMCHRlc3RzcGlkMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1XaP0EE6KI1kAeeZizDl/vUAOG1Dsr+UfypNd6T6BsmFYzxW2YB+v0aXa2CkjbRumSKBOln+txyGVXNinz+sp2Rayav9Vxmz3UQvI+4VG3EeK8dadfu2OqzQ53XC6O1NDnSv3OkcZxiD7ECc3ctCrCxnyoQf0i7uEvX5Y7Cc4iF5LSx0+1cXecTo64gY7yuoV4iIL9qmJoXQQBfDzfFrafQQ2iZa4ITZRhsh/hhQ/3HDxbA5A0qZaZDeJbeJmNjxJjwwR7VwrI6DIU8tgWrrMnEEgm0KyZaNW2H/kpeIuw6rgSZnZ+IbXvRAZ/Uk5hKVPhIw6qEpamCU20MohMuX5wIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBJcprCOVcK22vJOsJdf7CDWFZEQ1j+D/meQJTPj/8t0XPhL9PnOSwwCv/zK1DQmVZ2rHl/Y0WM4Bem8M27fj9jAq8761n4+rUxmn15kNqAMI1nIOo0hruEzwAB0+knHC4ia0qRRBV2t+nWORM4SjbdpgXphh3AI8fSxlrdYU4B+N163qbk9jIpz4buIvcODmSGxlUuyuuuyroSMWtSeDA/AEF6DUEuknsZ6oMJR0QXy2mufBT/IJw2mr633VTxpsQXVV4eA6tl7r4WS8dWa1IOvWqVMyBSTa7UPrMrzyBv0tehEriqqjJ8mpqVkKdtVpNSZ0HUScZINAsyPl6SNZaS</ds:X509Certificate>
+<ds:X509Certificate>MIICoTCCAYkCBgF9M8QjazANBgkqhkiG9w0BAQsFADAUMRIwEAYDVQQDDAl0ZXN0c3BpZDIwHhcNMjExMTE4MTU1NTMxWhcNMzExMTE4MTU1NzExWjAUMRIwEAYDVQQDDAl0ZXN0c3BpZDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCUcjQGjU4jszI3mDIC+APCSCxfkuR8Up7+3LNZTsF11xntCYHbNno+wsjSc5MplJEHpZ4U1dd/p6qQoDdTFeP7xOoM+IPp3GLr0P0mNziMEE0mP4AiG0U8kh2ZYAVTCYrKU9kM8YVqy+I2RuwaaS3cVYd8EO8FiB6tIJZRVCh74cRVJwEzBSqEnffMKdq86DYb6/ndAk83MAuM1jAbCtWgU5G35Dyzihsvh7yyyxfFnQnUFT8IWEX1qXe3mEmeTj8DtXlB2AWtWaMuU0W7+YFRRbo7xbtjYVcerVYnSAlokmQm6LJwAaTAkz+FjVmwZkSJ2dryhUIqBmbndci4BF99AgMBAAEwDQYJKoZIhvcNAQELBQADggEBAE/d4073Y3MxhhtACtpa/srO2pTpncw4q+nElMRAUF6QR32fYMOQMJfQ3z+3QEuOUZsvakWxkQjZ29mEa1dIsZYeS8fo41dxmGDRYsArHjELA6FO3PlbKMR7gldkN4VwV+ispct/6VwYF1LSwJl+OX27V+XWxAl0+znQKf1l5v+nH+AqtALH+eswlvJzG4YpcwwPiVc/v5AK4gxnn+/ImgCjc2V3dmr5fTu4QRNhLBuXSg5iB5tuz7/C6YeB0vi2D8FoT7RhE8jrUqyp9UubFWIOTs8epYxi8qBxULLhP63SRRDPxPr18MU4x/h+p4X80duvjevPFu1Oh5L6STdmvic=</ds:X509Certificate>
 </ds:X509Data>
 </ds:KeyInfo>
 </md:KeyDescriptor>
-<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/auth/realms/testspid/broker/spid-demo/endpoint"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/auth/realms/template/broker/spid-demo/endpoint"/>
 <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/auth/realms/testspid/broker/spid-demo/endpoint" index="0" isDefault="true"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/auth/realms/template/broker/spid-demo/endpoint" index="0" isDefault="true"/>
 <md:AttributeConsumingService index="1" isDefault="true">
 <md:ServiceName xml:lang="it">Servizi</md:ServiceName>
 <md:RequestedAttribute Name="placeOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>

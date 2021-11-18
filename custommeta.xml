@@ -1,5 +1,29 @@
-<md:EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="http://localhost:8080/auth/realms/testspid" ID="ID_dceba3aa-25c3-4b79-927b-1d95abda2523">
-<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="true">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="ID_24ca44a7-58e6-4c0e-8ad1-2d7e76464149" entityID="http://localhost:8080/auth/realms/testspid">
+<dsig:Signature xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+<dsig:SignedInfo>
+<dsig:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<dsig:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<dsig:Reference URI="#ID_24ca44a7-58e6-4c0e-8ad1-2d7e76464149">
+<dsig:Transforms>
+<dsig:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<dsig:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</dsig:Transforms>
+<dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<dsig:DigestValue>X7LeUXwRd60b3SJOarFgjCOOu6x8RKHhGUrrL1OHcts=</dsig:DigestValue>
+</dsig:Reference>
+</dsig:SignedInfo>
+<dsig:SignatureValue>VSEPCyiEUA5tC6XNLXmjWDeFVNOpXxuWwYp9D4wDIosnTinCTSuBN0V5Z1kpuQfXQRlto93QCo2XlJQkqV3ebPm8+PoyTaVDRWGLUHgSEMxMkcjjB7uwpjq6MxEaz9nacRbmaylckAwK8I87yDYQNKuz5jWBaBo7lw1M+tYLwMkJMjxTIwkbWqDnxnFmaCifBdSJ5eugFq3wNK4kSVIHuuVh0CvvaE3fTtzQNnPMbpmSuVi4H8Io/Sr2WcuPhSvvmAidx7oCoNimjoTOn89V5C7Z0mF4b3gBQCRifh7zERD4xsmMDpBh3Izz0to2n1q1SEBtNC9DVplKDg8sDiQV0w==</dsig:SignatureValue>
+<dsig:KeyInfo>
+<dsig:KeyName>4ppYKyxSEhJfSmFr5snpHFAM-XUuIBOTKY9Ps-06LeA</dsig:KeyName>
+<dsig:KeyValue>
+<dsig:RSAKeyValue>
+<dsig:Modulus>1XaP0EE6KI1kAeeZizDl/vUAOG1Dsr+UfypNd6T6BsmFYzxW2YB+v0aXa2CkjbRumSKBOln+txyGVXNinz+sp2Rayav9Vxmz3UQvI+4VG3EeK8dadfu2OqzQ53XC6O1NDnSv3OkcZxiD7ECc3ctCrCxnyoQf0i7uEvX5Y7Cc4iF5LSx0+1cXecTo64gY7yuoV4iIL9qmJoXQQBfDzfFrafQQ2iZa4ITZRhsh/hhQ/3HDxbA5A0qZaZDeJbeJmNjxJjwwR7VwrI6DIU8tgWrrMnEEgm0KyZaNW2H/kpeIuw6rgSZnZ+IbXvRAZ/Uk5hKVPhIw6qEpamCU20MohMuX5w==</dsig:Modulus>
+<dsig:Exponent>AQAB</dsig:Exponent>
+</dsig:RSAKeyValue>
+</dsig:KeyValue>
+</dsig:KeyInfo>
+</dsig:Signature>
+<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
 <md:KeyDescriptor use="signing">
 <ds:KeyInfo>
 <ds:KeyName>4ppYKyxSEhJfSmFr5snpHFAM-XUuIBOTKY9Ps-06LeA</ds:KeyName>
@@ -10,8 +34,8 @@
 </md:KeyDescriptor>
 <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/auth/realms/testspid/broker/spid-demo/endpoint"/>
 <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/auth/realms/testspid/broker/spid-demo/endpoint" isDefault="true" index="0"/>
-<md:AttributeConsumingService isDefault="true" index="1">
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/auth/realms/testspid/broker/spid-demo/endpoint" index="0" isDefault="true"/>
+<md:AttributeConsumingService index="1" isDefault="true">
 <md:ServiceName xml:lang="it">Servizi</md:ServiceName>
 <md:RequestedAttribute Name="placeOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
 <md:RequestedAttribute Name="gender" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
@@ -22,7 +46,7 @@
 <md:RequestedAttribute Name="countyOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
 <md:RequestedAttribute Name="fiscalNumber" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
 </md:AttributeConsumingService>
-<md:AttributeConsumingService isDefault="false" index="2">
+<md:AttributeConsumingService index="2" isDefault="false">
 <md:ServiceName xml:lang="it">Servizi</md:ServiceName>
 <md:RequestedAttribute Name="placeOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
 <md:RequestedAttribute Name="gender" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
@@ -34,7 +58,7 @@
 <md:RequestedAttribute Name="fiscalNumber" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
 <md:RequestedAttribute Name="email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
 </md:AttributeConsumingService>
-<md:AttributeConsumingService isDefault="false" index="3">
+<md:AttributeConsumingService index="3" isDefault="false">
 <md:ServiceName xml:lang="it">Servizi</md:ServiceName>
 <md:RequestedAttribute Name="placeOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
 <md:RequestedAttribute Name="gender" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
@@ -46,7 +70,7 @@
 <md:RequestedAttribute Name="countyOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
 <md:RequestedAttribute Name="fiscalNumber" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
 </md:AttributeConsumingService>
-<md:AttributeConsumingService isDefault="false" index="4">
+<md:AttributeConsumingService index="4" isDefault="false">
 <md:ServiceName xml:lang="it">Servizi</md:ServiceName>
 <md:RequestedAttribute Name="placeOfBirth" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
 <md:RequestedAttribute Name="gender" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"/>
